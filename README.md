@@ -1,2 +1,0 @@
-# syspro
-Git training test 
