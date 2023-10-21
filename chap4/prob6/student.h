@@ -1,4 +1,4 @@
-#define START_ID 1001001
+#define START_ID 20118388
 struct student {
 	int id;
 	char name[20];

@@ -1,21 +1,21 @@
 #include <stdio.h>
 #include "student.h"
+
 int main(int argc, char* argv[])
 {
-    struct student rec;
-    FILE *fp;
- 
-    if (argc != 2) {
-      fprintf(stderr, "How to do: %s study.txt\n", argv[0]);
-      return 1;
-}
+	struct student rec;
+	FILE *fp;
 
-    fp = fopen(argv[1], "wb");
-    printf("%-9s %-7s %-4s\n", "StudentID", "Name", "Score");
+	if (argc != 2) {
+		fprintf(stderr, "How to use: %s study.txt\n",argv[0]);
+		return 1;
+	}
 
-    while (scanf("%d %s %d", &rec.id, rec.name, &rec.score)==3)
-      fwrite(&rec, sizeof(rec), 1, fp);
+	fp = fopen(argv[1], "wb");
+	printf("%-9s %-7s %-4s\n", "StudentID", "Name", "Score");
+	while (scanf("%d %s %d", &rec.id, rec.name, &rec.score)==3)
+		fwrite(&rec, sizeof(rec), 1, fp);
 
-    fclose(fp);
-    return 0;
+	fclose(fp);
+	return 0;
 }
