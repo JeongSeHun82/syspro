@@ -19,7 +19,6 @@ int main(int argc, char *argv[])
 			}
 			c = getc(fp);
 			while (c != EOF) {
-				putc(c, stdout);
 				c = getc(fp);
 			}
 		fclose(fp);
