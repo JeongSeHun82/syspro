@@ -1,0 +1,21 @@
+크기: 22                블록: 8          입출력 블록: 4096   일반 파일
+Device: 803h/2051d      Inode: 663847      Links: 1
+접근: (0664/-rw-rw-r--)  UID: ( 1000/sehunjeong)   GID: ( 1000/sehunjeong)
+1. 접근: 2023-11-14 23:57:45.223078004 +0900
+2. 수정: 2023-11-14 23:57:45.223078004 +0900
+3. 변경: 2023-11-14 23:57:45.223078004 +0900
+4. 생성: 2023-11-14 23:57:45.223078004 +0900
+
+"크기" :  The actual size of the file contents is 22 bytes.
+"블록" :  A block consists of 512 bytes in size. Therefore, since there are 8 blocks of 512 bytes in size, the file size becomes 4096 bytes (4K).
+"입출력 블록" : Shows the IO block size of 4096 bytes (4K).
+"일반 파일" : Shows whether the file is a regular file, directory, block file, or character file.
+"Device" : Shows the device number where the file exists.
+"Inode" : Value of file INODE
+"Links" : “1” for a file (character or block), “2” for a directory
+"접근" : Shows permissions for files/directories.
+"UID", "GID" : Shows the UID and GID of the file as seen in the ls -l output.
+1. Shows the last access time of the file (i.e. the last time the file was read).
+2. Shows the time the file contents were last modified.
+3. Shows the last metadata change time for the file.
+4. Supported only in Ext4 or higher, it shows the creation time of the file.

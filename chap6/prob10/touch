@@ -1,0 +1,5 @@
+-rw-rw-r-- 1 sehunjeong sehunjeong   22 11월 15 00:22 test.txt
+				V
+-rw-rw-r-- 1 sehunjeong sehunjeong   22 11월 15 00:23 test.txt
+
+Updates the access time and modification time of the file to the current time.

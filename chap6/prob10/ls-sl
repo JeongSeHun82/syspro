@@ -1,0 +1,8 @@
+4 -rw-rw-r-- 1 sehunjeong sehunjeong 22 11월 14 23:15 test.txt
+
+The first is the number of blocks, which indicates the number of blocks that make up the file in KB, and there are a total of 4.
+The second indicates the file type and access rights, including the owner, group, and other access rights. Groups such as the owner can both read and write, and other users can only read.
+The following is owner information, indicating the owner of the file and the group to which the owner belongs.
+22 represents the number of bytes in the file.
+File created on Nov 14 23:15 is the modification time of the file
+Or it indicates the last modified time. Lastly is the file name.
