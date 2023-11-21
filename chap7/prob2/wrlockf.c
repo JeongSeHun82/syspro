@@ -13,7 +13,7 @@ int main(int argc, char *argv[])
          fprintf(stderr, "How to use : %s File \n", argv[0]);
          exit(1);
      }
-     if ((fd = open(argv[1], O_RDONLY)) == -1) {
+     if ((fd = open(argv[1], O_RDWR)) == -1) {
          perror(argv[1]);
          exit(2);
      }
