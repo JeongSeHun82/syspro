@@ -14,7 +14,7 @@ int main()
 	char name[20];
 	struct student *ptr, *head = NULL;
 
-	printf(" ??\n");
+	printf("학번과 이름을 입력하세요.\n");
 
 	while (scanf("%d %s", &id, name) == 2) {
 		ptr = (struct student *) malloc(sizeof(struct student));
@@ -22,22 +22,20 @@ int main()
 			perror("malloc");
 			exit(1);
 		}
-		ptr -> id id = id;
+		ptr -> id = id;
 		strcpy(ptr -> name, name);
 
 		ptr->next = head;
 		head = ptr;
 	}
 
-	printf("\n* ?? *\n");
+	printf("\n* 학생 정보(역순)  *\n");
 	ptr = head;
 	while (ptr != NULL) {
 		count++;
-		printf(": %d    ", ptr -> id, ptr -> name);
+		printf("학번 : %d 이름: %s \n", ptr -> id, ptr -> name);
+		ptr = ptr -> next;
 	}
-	ptr = ptr -> next;
-}
-
-printf(" All .\n", count);
-exit(0);
+	printf("총 %d 명입니다\n", count);
+	exit(0);
 }
